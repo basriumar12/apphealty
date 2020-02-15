@@ -1,0 +1,188 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+
+    <include
+            android:id="@+id/toolbar_include"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            layout="@layout/toolbar"/>
+
+    <ScrollView
+            android:layout_below="@id/toolbar_include"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:layout_below="@+id/linearLayout"
+            android:layout_alignParentLeft="true" android:layout_alignParentStart="true">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:paddingTop="25dp"
+                android:orientation="horizontal">
+
+            <LinearLayout
+                    android:id="@+id/layImage1"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:id="@+id/img_doctor"
+                        android:src="@drawable/doctor"
+                        android:text="Button"
+                        android:layout_width="@dimen/image_button"
+                        android:layout_height="@dimen/image_button"/>
+
+                <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/menu_dokter"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <ImageView
+                        android:id="@+id/img_apotek"
+                        android:src="@drawable/apotek"
+                        android:text="Button"
+                        android:layout_width="@dimen/image_button"
+                        android:layout_height="@dimen/image_button"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/menu_apotek"/>
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:paddingTop="30dp"
+                android:orientation="horizontal">
+
+            <LinearLayout
+                    android:layout_alignParentLeft="true"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:id="@+id/img_puskesmas"
+                        android:src="@drawable/ambulance"
+                        android:text="Button"
+                        android:layout_width="@dimen/image_button"
+                        android:layout_height="@dimen/image_button"/>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_puskesmas" android:layout_gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <ImageView
+                        android:id="@+id/img_clinic"
+                        android:src="@drawable/clinic"
+                        android:text="Button"
+                        android:layout_width="@dimen/image_button"
+                        android:layout_height="@dimen/image_button"/>
+
+                <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_klinik"/>
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:paddingTop="30dp"
+                android:orientation="horizontal">
+
+            <LinearLayout
+                    android:layout_alignParentLeft="true"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:id="@+id/img_rumahsakit"
+                        android:src="@drawable/hospital"
+                        android:text="Button"
+                        android:layout_width="@dimen/image_button"
+                        android:layout_height="@dimen/image_button"/>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_rumahsakit" android:layout_gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <ImageView
+                        android:id="@+id/img_other"
+                        android:src="@drawable/other"
+                        android:text="Other"
+                        android:layout_width="@dimen/image_button"
+                        android:layout_height="@dimen/image_button"/>
+
+                <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Maps"/>
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+    <com.google.android.gms.ads.AdView
+        android:layout_gravity="center"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

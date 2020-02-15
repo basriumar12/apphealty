@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/primary"
+                tools:context="com.tenilodev.healthyfinder.PositionActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+        android:background="@color/md_grey_50" android:id="@+id/view"/>
+    <Button
+        android:padding="7dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/manual_select"
+            android:background="@color/md_amber_500"
+            android:textColor="@color/abc_primary_text_material_dark"
+            android:id="@+id/buttonPickLocation"
+            android:layout_below="@+id/view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/abc_primary_text_material_dark"
+            android:layout_marginBottom="40dp"
+            android:padding="15dp"
+            android:gravity="center"
+            android:textColorLink="@color/md_amber_500"
+            android:id="@+id/textViewAddress"
+            android:layout_above="@+id/view" android:layout_centerHorizontal="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/getcurrent_location"
+            android:textColor="@color/abc_primary_text_material_dark"
+            android:id="@+id/textViewProgress"
+            android:layout_above="@+id/textViewAddress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"/>
+    <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar" android:layout_above="@+id/textViewProgress"
+            android:layout_centerHorizontal="true" android:indeterminate="false"/>
+    <ImageView
+            android:src="@drawable/tick_green"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/textViewAddress"
+            android:layout_marginBottom="30dp"
+            android:id="@+id/imageViewSuccess"/>
+
+    <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/button_finish"
+            android:id="@+id/buttonFinish"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="15dp"
+            android:textColor="@color/abc_primary_text_material_dark"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1058770580598",
+    "firebase_url": "https://apphelthy.firebaseio.com",
+    "project_id": "apphelthy",
+    "storage_bucket": "apphelthy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1058770580598:android:0040b05616c1aa81",
+        "android_client_info": {
+          "package_name": "com.blogbasbas.healthyfinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1058770580598-hnb38fdfg2hjbriv2ob9r7g25tnupdte.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.blogbasbas.healthyfinder",
+            "certificate_hash": "d93c2e5c22399bc6537e1d42e79eacd7c26fd91f"
+          }
+        },
+        {
+          "client_id": "1058770580598-8nmqit5c0vuaobcp74v9hl6bh2mc02i4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCk3jMtBC6G-1o51AIHEWTB7BZSTKRwRkY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1058770580598-8nmqit5c0vuaobcp74v9hl6bh2mc02i4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context="com.tenilodev.healthyfinder.ListActivity">
+
+
+    <include
+            android:id="@+id/toolbar_include"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/toolbar"/>
+
+    <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/toolbar_include"
+            android:layout_above="@+id/linbottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:id="@+id/rv"
+            />
+
+    <LinearLayout
+        android:id="@+id/linbottom"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_above="@id/adView"
+        android:background="@color/md_green_300"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerSubkategori"
+
+            />
+
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        android:layout_gravity="center"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.tenilodev.healthyfinder.AboutActivity">
+    <item android:id="@+id/action_favorite"
+          android:title="@string/label_favorite"
+          android:icon="@drawable/ic_action_favoriteoff"
+          android:orderInCategory="100"
+          app:showAsAction="ifRoom"/>
+</menu>

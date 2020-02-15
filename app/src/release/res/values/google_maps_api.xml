@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="google_maps_key_instructions">
+        <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=84:74:82:2F:D6:3D:38:1C:84:F4:09:CA:0D:31:42:63:72:E3:99:E2%3Bcom.tenilodev.healthyfinder
+
+    You can also add your credentials to an existing key, using this line:
+    84:74:82:2F:D6:3D:38:1C:84:F4:09:CA:0D:31:42:63:72:E3:99:E2;com.tenilodev.healthyfinder
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+        -->
+    </string>
+    <string name="google_maps_key" templateMergeStrategy="preserve">AIzaSyCU-Xju-hsaU8QK5JB2MpeUjkxxFLxYSr0</string>
+
+</resources>
